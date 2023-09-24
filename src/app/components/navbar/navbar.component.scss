@@ -10,13 +10,24 @@
         margin-left: 20px;
     }
     .nav-menu{
-        width: 70%;
+        width: 60%;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
         .nav-items{
             cursor: pointer;
+            p{
+                font-size: 20px;
+                a{
+                    text-decoration: none;
+                    color: var(--color-tertiary);
+                }
+                .active{
+                    color: var(--color-accent);
+                }
+            }
         }
     }
 }
+

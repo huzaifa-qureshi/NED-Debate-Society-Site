@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { Router, UrlTree } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
@@ -7,7 +6,7 @@ import { Router, UrlTree } from '@angular/router';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent {
-  navitems = [
+  public navitems = [
     {
       name: 'Home',
       route: '/home'
@@ -33,9 +32,4 @@ export class NavbarComponent {
       route: '/join-us'
     }
   ]
-  constructor(private router: Router){}
-
-  changeRoute(item: { route: string | UrlTree; }){
-    this.router.navigateByUrl(item.route)
-  }
 }
