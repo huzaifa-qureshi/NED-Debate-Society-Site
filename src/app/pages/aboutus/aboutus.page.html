@@ -2,11 +2,28 @@
     About Us
 </header>
 
-<section>
+<section class="para-section">
     <p class="fira-sans-medium">
         The NED Debate Society at NED University is a dynamic organization focused on English and Urdu debates,
         parliamentary-style debates, Model United Nations (MUN) participation, declamation, and speeches. It provides a
         platform for students to enhance their speaking and critical thinking skills, engage in constructive dialogue,
         and participate in various forms of public speaking.
     </p>
+</section>
+
+<section class="people-section">
+    <div class="cards-container" *ngFor="let role of roles">
+        <ng-container *ngIf="getFilteredByRole(role).length > 0">
+            <div class="role fira-sans-bold">{{role}}</div>
+            <div class="people-container">
+                <div class="person-card" *ngFor="let person of getFilteredByRole(role)">
+                    <div class=" icon-container">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                    </div>
+                    <div class="name fira-sans-bold">{{person.name}}</div>
+                    <div class="position">{{person.position}}</div>
+                </div>
+            </div>
+        </ng-container>
+    </div>
 </section>
