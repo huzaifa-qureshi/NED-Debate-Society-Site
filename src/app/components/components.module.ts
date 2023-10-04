@@ -6,6 +6,7 @@ import { HeroSectionComponent } from './hero-section/hero-section.component';
 import { FooterComponent } from './footer/footer.component';
 import { ScrollingTextComponent } from './scrolling-text/scrolling-text.component';
 import { JoinUsComponent } from './join-us/join-us.component';
+import { ContactFormComponent } from './contact-form/contact-form.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { JoinUsComponent } from './join-us/join-us.component';
     FooterComponent,
     ScrollingTextComponent,
     JoinUsComponent,
+    ContactFormComponent,
   ],
   imports: [
     CommonModule,
@@ -25,6 +27,7 @@ import { JoinUsComponent } from './join-us/join-us.component';
     FooterComponent,
     ScrollingTextComponent,
     JoinUsComponent,
+    ContactFormComponent,
   ]
 })
 export class ComponentsModule { }
