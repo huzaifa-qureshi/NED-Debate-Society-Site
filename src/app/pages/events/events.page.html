@@ -1,1 +1,18 @@
-<p>events works!</p>
+<div class="news">
+    News and Events
+</div>
+<div class="big-container">    
+    <div class="container" *ngFor="let data of news">
+        <div class="image">
+            <img [src]="data.image_path"  alt="This was news image">
+        </div>
+        <div class="image_description">
+            <div class="title">{{data.title}}</div>
+            <div class="date">{{data.date}}</div>
+            <div class="event_description">{{data.description}}</div>
+            <div class="register">
+                <button class="register_button">Register</button>
+            </div>
+        </div>
+    </div>
+</div>
