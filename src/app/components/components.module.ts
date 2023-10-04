@@ -5,13 +5,15 @@ import { RouterModule } from '@angular/router';
 import { HeroSectionComponent } from './hero-section/hero-section.component';
 import { FooterComponent } from './footer/footer.component';
 import { ScrollingTextComponent } from './scrolling-text/scrolling-text.component';
+import { JoinUsComponent } from './join-us/join-us.component';
 
 @NgModule({
   declarations: [
     NavbarComponent,
     HeroSectionComponent,
     FooterComponent,
-    ScrollingTextComponent
+    ScrollingTextComponent,
+    JoinUsComponent,
   ],
   imports: [
     CommonModule,
@@ -21,7 +23,8 @@ import { ScrollingTextComponent } from './scrolling-text/scrolling-text.componen
     NavbarComponent,
     HeroSectionComponent,
     FooterComponent,
-    ScrollingTextComponent
+    ScrollingTextComponent,
+    JoinUsComponent,
   ]
 })
 export class ComponentsModule { }
