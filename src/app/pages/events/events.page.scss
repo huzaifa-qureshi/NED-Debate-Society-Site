@@ -1,3 +1,4 @@
+//         header
 .news {
     display: flex;
     justify-content: center;
@@ -6,15 +7,17 @@
     font-weight: 700;
     color: var(--color-tertiary);
     background-color: var(--color-primary);
+    padding: 2rem;
 }
-
+// main container which contains all news containers
 .big-container {
-    margin-top: 2rem;
+    margin-top: 4rem;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 3rem;
 }
 
+// news container
 .container {
     background-color: var(--color-primary);
     display: flex;
@@ -83,7 +86,16 @@
     color: white;
     font-size: 32px;
     font-weight: 500;
-    //       T B    L R       
     padding: 1rem 3rem;
     border: none;
+}
+
+@media (max-width:775px) {
+
+    .container,
+    container:nth-child(even) {
+        flex-direction: column !important;
+        align-items: center !important;
+        padding: 2.5rem 0.75rem;
+    }
 }
