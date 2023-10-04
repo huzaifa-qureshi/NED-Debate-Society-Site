@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { JoinusComponent } from './joinus.page';
 import { JoinusRoutingModule } from './joinus-routing.module';
+import { ComponentsModule } from 'src/app/components/components.module';
 
 
 
@@ -11,7 +12,11 @@ import { JoinusRoutingModule } from './joinus-routing.module';
   ],
   imports: [
     CommonModule,
-    JoinusRoutingModule
+    JoinusRoutingModule,
+    ComponentsModule
+  ],
+  exports:[
+    JoinusComponent,
   ]
 })
 export class JoinusModule { }

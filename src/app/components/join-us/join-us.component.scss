@@ -1,0 +1,26 @@
+.joinus-container{
+    height: calc(100vh - 100px);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    .left-box, .right-box{
+        height: 100%;
+    }
+    .right-box{
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p{
+            line-height: 52px;
+            font-size: 24px;
+            color: var(--color-tertiary);
+            text-align: justify;
+        }
+    }
+}
+
+.nds-btn{
+    position: relative;   
+    justify-self: end;
+    transform: translateX(50%);
+}

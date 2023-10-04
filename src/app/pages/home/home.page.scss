@@ -1,0 +1,22 @@
+.header{
+    display: flex;
+    height: 80px;
+    background-color: var(--color-primary);
+    justify-content: center;
+    margin-bottom: 40px;
+    .header-title{
+        border-radius: 20px;
+        background-color: var(--color-accent);
+        height: 80px;
+        width: 50%;
+        transform: translateY(40%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p{
+            color: #fff;
+            font-size: 30px;
+            transform: translateY(25%);
+        }
+    }
+}

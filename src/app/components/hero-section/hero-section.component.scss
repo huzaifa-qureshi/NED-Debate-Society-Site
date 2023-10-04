@@ -1,0 +1,12 @@
+.hero-section-container{
+    height: calc(100vh - 100px);
+    background-image: url('/assets/Images/BackgroundImg.png');
+    background-size: cover;
+    background-color: var(--color-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .nds-btn{
+        margin-top: 40vh;
+    }
+}

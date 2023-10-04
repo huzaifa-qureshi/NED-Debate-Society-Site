@@ -1,0 +1,24 @@
+.footer-section-container{
+    height: 200px;
+    background-color: var(--color-secondary);
+    .footer-menu{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 16px;
+        .footer-menu-list{
+            font-size: 20px;
+            color: var(--color-tertiary);
+        }
+    }
+    .footer-logos{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .nds-logo{
+            height: 80px;
+        }
+        .ned-logo{
+            height: 80px;
+        }
+    }
+}

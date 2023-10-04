@@ -1,1 +1,39 @@
-<p>aboutus works!</p>
+<!-- Header Section -->
+<header class="fira-sans-bold">
+    About Us
+</header>
+
+<!-- Paragraph Section -->
+<section class="para-section">
+    <p class="fira-sans-medium">
+        The NED Debate Society at NED University is a dynamic organization focused on English and Urdu debates,
+        parliamentary-style debates, Model United Nations (MUN) participation, declamation, and speeches. It provides a
+        platform for students to enhance their speaking and critical thinking skills, engage in constructive dialogue,
+        and participate in various forms of public speaking.
+    </p>
+</section>
+
+<!-- People Section -->
+<section class="people-section">
+    <!-- Cards Container - Iterating through different roles -->
+    <div class="cards-container" *ngFor="let role of roles">
+        <ng-container *ngIf="getFilteredByRole(role).length > 0">
+            <!-- Role Title -->
+            <div class="role fira-sans-bold">{{role}}</div>
+            <!-- People Container for a Specific Role -->
+            <div class="people-container">
+                <!-- Person Card - Iterating through individuals with the current role -->
+                <div class="person-card" *ngFor="let person of getFilteredByRole(role)">
+                    <!-- Icon Container - Displays an icon (e.g., user icon) -->
+                    <div class="icon-container">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                    </div>
+                    <!-- Person Name -->
+                    <div class="name fira-sans-bold">{{person.name}}</div>
+                    <!-- Person Position/Title -->
+                    <div class="position">{{person.position}}</div>
+                </div>
+            </div>
+        </ng-container>
+    </div>
+</section>
