@@ -5,6 +5,7 @@
     justify-content: space-between;
     height: 100px;
     width: 100vw;
+    z-index: 100;
     .nds-logo{
         height: 80%;
         margin-left: 20px;
@@ -16,7 +17,7 @@
         justify-content: space-around;
         align-items: center;
         .nav-items{
-            cursor: pointer;
+            // cursor: pointer;
             p{
                 font-size: 20px;
                 a{
@@ -29,5 +30,59 @@
             }
         }
     }
+    .nav-btn, #nav-check {
+        display: none;
+    }
 }
 
+@media (max-width:800px) {
+    .navigation-box{
+        .nav-btn{
+            display: inline-block;
+            position: absolute;
+            right: 0px;
+            top: 25%;
+            label{
+                display: inline-block;
+                width: 80px;
+                height: 50px;
+                padding: 13px;
+                span{
+                    display: block;
+                    width: 40px;
+                    height: 12px;
+                    border-top: 2px solid var(--color-tertiary);
+
+                }
+            }
+        }
+        .nav-menu{
+            position: absolute;
+            display: block;
+            width: 100%;
+            background-color: var(--color-primary);
+            height: 0px;
+            transition: all 0.4s ease-in;
+            overflow-y: hidden;
+            top: 100px;
+            left: 0px;
+            .nav-items{
+                padding-left: 40px;
+                margin: 40px 0;
+                p{
+                    font-size: 28px;
+                    display: block;
+                    width: 100%;
+                }
+                
+            }
+        }
+        #nav-check:not(:checked) ~ .nav-menu {
+            height: 0px;
+        }
+        #nav-check:checked ~ .nav-menu {
+            height: calc(100vh - 100px);
+            overflow-y: auto;
+        }
+    }
+}

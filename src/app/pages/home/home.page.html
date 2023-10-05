@@ -1,18 +1,54 @@
 <hero-section></hero-section>
 <scrolling-text></scrolling-text>
+
 <div class="header">
     <div class="header-title"><p class="fira-sans-bold">News and Events</p></div>
 </div>
-<div class="header">
-    <div class="header-title"><p class="fira-sans-bold">Gallery and Achievments</p></div>
+<div class="big-container">
+    <div class="container" *ngFor="let data of news">
+        <div class="image">
+            <img [src]="data.image_path" alt="This was news image">
+        </div>
+        <div class="image_description">
+            <div class="title">{{data.title}}</div>
+            <div class="date">{{data.date}}</div>
+            <div class="event_description">{{data.description}}</div>
+            <div class="register">
+                <button class="register_button">Register</button>
+            </div>
+        </div>
+    </div>
 </div>
+
+<!-- <div class="header">
+    <div class="header-title"><p class="fira-sans-bold">Gallery</p></div>
+</div> -->
+
 <div class="header">
     <div class="header-title"><p class="fira-sans-bold">About Us</p></div>
 </div>
+<section class="people-section">
+    <div class="cards-container" *ngFor="let role of roles">
+        <ng-container *ngIf="getFilteredByRole(role).length > 0">
+            <div class="role fira-sans-bold">{{role}}</div>
+            <div class="people-container">
+                <div class="person-card" *ngFor="let person of getFilteredByRole(role)">
+                    <div class="icon-container">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                    </div>
+                    <div class="name fira-sans-bold">{{person.name}}</div>
+                    <div class="position">{{person.position}}</div>
+                </div>
+            </div>
+        </ng-container>
+    </div>
+</section>
+
 <div class="header">
     <div class="header-title"><p class="fira-sans-bold">Join Us</p></div>
 </div>
 <join-us></join-us>
+
 <div class="header">
     <div class="header-title"><p class="fira-sans-bold">Contact Us</p></div>
 </div>

@@ -3,3 +3,43 @@ body{
     background-color: var(--color-background);
     overflow-x: hidden;
 }
+
+.nds-btn{
+    //font
+    font-size: 18px;
+    color: var(--color-background);
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 700;
+    
+    //button
+    height: 2.5em;
+    width: 10em;
+    border: none;
+    background-color: var(--color-accent);
+    border-radius: 16px;
+    box-shadow: 0px 3px rgba(#000000, 0.50);
+    
+}
+
+.nds-btn:hover{
+    opacity: 0.9;
+}
+
+.nds-btn:active{
+    box-shadow: 0px 4px rgba(#000000, 0.50);
+}
+
+@media (max-width:800px){
+    .nds-btn{
+        //font
+        font-size: 16px;
+        
+        //button
+        height: 2em;
+        width: 8em;
+        border: none;
+        background-color: var(--color-accent);
+        border-radius: 16px;
+        box-shadow: 0px 3px rgba(#000000, 0.50);
+    }    
+}

@@ -1,3 +1,6 @@
+@import "/src/app/pages/aboutus/aboutus.page.scss";
+@import "/src/app/pages/events/events.page.scss";
+
 .header{
     display: flex;
     height: 80px;
@@ -19,4 +22,13 @@
             transform: translateY(25%);
         }
     }
+}
+
+@media (max-width: 800px){
+    .header > .header-title{
+        width: 60%;
+        p {
+            font-size: 22px;
+        }
+    } 
 }
