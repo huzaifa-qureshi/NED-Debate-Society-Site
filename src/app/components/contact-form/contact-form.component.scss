@@ -1,0 +1,65 @@
+/* Center the entire form on the page */
+.container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Style form labels */
+.form-group label {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: bold;
+  color: var(--color-tertiary);
+  text-align: left; /* Align labels to the left */
+  display: block; /* Ensure labels are on separate lines */
+}
+
+/* Style form input and textarea elements */
+.form-control {
+  width: 280px; /* Make the input elements 60% width */
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 3px solid var(--color-tertiary);
+  border-radius: 15px;
+  font-family: 'Fira Sans', sans-serif;
+  transition: background-color 0.3s ease; /* Add transition effect for background color */
+}
+
+/* Add hover effect for form-control */
+.form-control:hover {
+  background-color: #dddddd; /* Change background color on hover */
+}
+
+/* Style the email input differently */
+.form-control[type="email"] {
+  /* Add specific styles for email input if needed */
+}
+
+/* Style the textarea */
+.form-control[type="textarea"] {
+  /* Add specific styles for textarea if needed */
+}
+
+/* Style the submit button if present */
+.form-group {
+  align-items: center;
+  text-align: center;
+}
+
+.form-group button[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 15px; /* Match the border radius of other input elements */
+  cursor: pointer;
+  font-family: 'Fira Sans', sans-serif;
+  margin-top: 10px; /* Add margin to separate the button from other elements */
+  width: 280px; /* Match the width of other input elements */
+}
+
+/* Style the button on hover */
+.form-group button[type="submit"]:hover {
+  background-color: #0056b3;
+}
