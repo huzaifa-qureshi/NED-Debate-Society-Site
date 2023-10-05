@@ -24,3 +24,32 @@
     justify-self: end;
     transform: translateX(50%);
 }
+
+@media (max-width:800px) {
+    .joinus-container{
+        grid-template-columns: 1fr;
+        .left-box{
+            height: 260px;
+            svg{
+                height: 260px;
+                transform: translateX(8%);
+            }
+        }
+        .right-box{
+            height: auto;
+            padding: 0 10%;
+            p{
+                line-height: 24px;
+                font-size: 18px;
+                color: var(--color-tertiary);
+                text-align: justify;
+            }
+        }
+    }
+
+    .nds-btn{
+        position: relative;   
+        justify-self: center;
+        transform: translateX(0);
+    }
+}
