@@ -80,20 +80,6 @@ header {
     .cards-container {
         gap: 2rem;
     }
-
-    .person-card {
-        font-size: 1.5rem;
-        padding: 1rem 2rem;
-    }
-
-    .role,
-    .name {
-        font-size: 1.5rem;
-    }
-
-    .icon-container {
-        font-size: 5rem;
-    }
 }
 
 /* Media query for even smaller screens (e.g., mobile) */
@@ -101,19 +87,5 @@ header {
     .para-section>p {
         font-size: 1.5rem;
         padding: 2rem;
-    }
-
-    .person-card {
-        font-size: 1.2rem;
-        padding: 1rem;
-    }
-
-    .role,
-    .name {
-        font-size: 1.2rem;
-    }
-
-    .icon-container {
-        font-size: 4rem;
     }
 }
