@@ -17,12 +17,13 @@
 
 /* Style form input and textarea elements */
 .form-control {
-  width: 280px; /* Make the input elements 60% width */
+  width: 30vw; /* Make the input elements 60% width */
   padding: 10px;
   margin-bottom: 12px;
   border: 3px solid var(--color-tertiary);
   border-radius: 15px;
   font-family: 'Fira Sans', sans-serif;
+  background-color: var(--color-background);
   transition: background-color 0.3s ease; /* Add transition effect for background color */
 }
 
@@ -48,7 +49,7 @@
 }
 
 .form-group button[type="submit"] {
-  background-color: #007bff;
+  background-color: var(--color-tertiary);
   color: white;
   border: none;
   padding: 10px;
@@ -56,10 +57,16 @@
   cursor: pointer;
   font-family: 'Fira Sans', sans-serif;
   margin-top: 10px; /* Add margin to separate the button from other elements */
-  width: 280px; /* Match the width of other input elements */
+  width: 30vw; /* Match the width of other input elements */
 }
 
 /* Style the button on hover */
 .form-group button[type="submit"]:hover {
   background-color: #0056b3;
+}
+
+@media (max-width: 800px) {
+  .form-control, .form-group button[type="submit"]  {
+    width: 260px; 
+  }
 }
