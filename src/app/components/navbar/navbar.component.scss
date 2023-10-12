@@ -41,7 +41,7 @@
             display: inline-block;
             position: absolute;
             right: 0px;
-            top: 25%;
+            top: 25px;
             label{
                 display: inline-block;
                 width: 80px;
@@ -52,7 +52,6 @@
                     width: 40px;
                     height: 12px;
                     border-top: 2px solid var(--color-tertiary);
-
                 }
             }
         }

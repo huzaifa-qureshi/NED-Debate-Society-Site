@@ -20,9 +20,9 @@
 }
 
 .nds-btn{
-    position: relative;   
+    // position: relative;   
     justify-self: end;
-    transform: translateX(50%);
+    transform: translateX(46%);
 }
 
 @media (max-width:800px) {
@@ -32,7 +32,7 @@
             height: 260px;
             svg{
                 height: 260px;
-                transform: translateX(8%);
+                // transform: translateX(8%);
             }
         }
         .right-box{
@@ -48,8 +48,8 @@
     }
 
     .nds-btn{
-        position: relative;   
+        // position: relative;   
         justify-self: center;
-        transform: translateX(0);
+        transform: none;
     }
 }

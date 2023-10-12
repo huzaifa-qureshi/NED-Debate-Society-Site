@@ -6,6 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent {
+  ischecked: any;
+  
   public navitems = [
     {
       name: 'Home',
@@ -32,4 +34,9 @@ export class NavbarComponent {
       route: '/join-us'
     }
   ]
+
+  closenav(){
+    this.ischecked = !this.ischecked
+  }
+
 }

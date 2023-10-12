@@ -3,6 +3,27 @@ body{
     background-color: var(--color-background);
     overflow-x: hidden;
 }
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  *{
+    scrollbar-width: auto;
+    scrollbar-color: #22668d #ffffff;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 14px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #22668d;
+    border-radius: 10px;
+    border: 0px solid #ffffff;
+  }
 
 .nds-btn{
     //font

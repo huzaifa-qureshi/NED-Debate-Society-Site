@@ -10,7 +10,7 @@ header {
 
 .para-section>p {
     color: var(--color-tertiary);
-    font-size: 2.5rem;
+    font-size: 32px;
     padding: 6rem 10rem;
     text-align: justify;
 }
@@ -20,6 +20,7 @@ header {
     flex-direction: column;
     gap: 3rem;
     padding: 0 3rem;
+    margin-bottom: 40px;
 }
 
 .cards-container {
@@ -59,15 +60,7 @@ header {
     font-size: 7.5rem;
 }
 
-/* Media query for smaller screens (e.g., tablets) */
-@media (max-width: 1160px) {
-    .para-section>p {
-        font-size: 2rem;
-        padding: 4rem;
-    }
-}
-
-@media (max-width: 768px) {
+@media (max-width: 800px) {
     header {
         font-size: 2.5rem;
         padding: 1rem;
@@ -78,14 +71,25 @@ header {
     }
 
     .cards-container {
-        gap: 2rem;
+        gap: 1rem;
     }
-}
-
-/* Media query for even smaller screens (e.g., mobile) */
-@media (max-width: 480px) {
-    .para-section>p {
+    .person-card {
         font-size: 1.5rem;
-        padding: 2rem;
+        padding: 1rem 2rem;
     }
+
+    .role,
+    .name {
+        font-size: 1.5rem;
+    }
+    
+    .icon-container {
+        font-size: 5rem;
+    }
+    
+    .para-section>p {
+        font-size: 20px;
+        padding: 4rem;
+    }
+    
 }

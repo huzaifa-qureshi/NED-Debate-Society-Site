@@ -1,5 +1,5 @@
 <nav class="navigation-box p-2">
-    <input type="checkbox" id="nav-check">
+    <input type="checkbox" id="nav-check" [(ngModel)]="ischecked">
     <img class="nds-logo" src="/assets/Images/NDS Logo.png"/>
     <div class="nav-btn">
         <label for="nav-check">
@@ -11,6 +11,7 @@
     <div class="nav-menu">
         <div class="nav-items" *ngFor="let item of navitems">
             <p class="fira-sans-medium"><a 
+                (click)="closenav()"
                 routerLink="/{{ item.route }}"
                 routerLinkActive="active"
                 >{{item.name}}</a></p>

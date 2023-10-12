@@ -7,6 +7,8 @@ import { FooterComponent } from './footer/footer.component';
 import { ScrollingTextComponent } from './scrolling-text/scrolling-text.component';
 import { JoinUsComponent } from './join-us/join-us.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
+import { GalleryComponentComponent } from './gallery-component/gallery-component.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,10 +18,12 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
     ScrollingTextComponent,
     JoinUsComponent,
     ContactFormComponent,
+    GalleryComponentComponent,
   ],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    FormsModule
   ],
   exports: [
     NavbarComponent,
@@ -28,6 +32,7 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
     ScrollingTextComponent,
     JoinUsComponent,
     ContactFormComponent,
+    GalleryComponentComponent,
   ]
 })
 export class ComponentsModule { }
